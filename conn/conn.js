@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 // url de conexao = mongodb://servidor:porta/banco
 const Conn = (url, user, pass, data) => {
-  mongoose.connect(`${url}/${data}`, {
+  mongoose.connect('`${url}/${data}`', {
     user: user,
     pass: pass,
     useNewUrlParser: true,
